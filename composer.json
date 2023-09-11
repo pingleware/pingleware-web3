@@ -18,6 +18,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=8.2",
-        "cweiske/jsonrpcphp": "^2.0"
+        "curl": ">=7.82",
+        "pingleware-deploy-cli": ">=1.2.0"
     }
 }
