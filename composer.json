@@ -1,0 +1,23 @@
+{
+    "name": "pingleware/web3",
+    "description": "PHP library for Web3",
+    "type": "library",
+    "license": "BSL-1.1",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "PINGLEWARE\\Web3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PRESSPAGE ENTERTAINMENT INC dba PINGLEWARE",
+            "email": "maintainers@pingleware.work"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.2",
+        "cweiske/jsonrpcphp": "^2.0"
+    }
+}
