@@ -3,7 +3,7 @@
     "description": "PHP library for Web3",
     "type": "library",
     "license": "CC-BY-4.0",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "autoload": {
         "psr-4": {
             "PINGLEWARE\\Web3\\": "src/"
