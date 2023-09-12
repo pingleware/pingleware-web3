@@ -2,7 +2,7 @@
     "name": "pingleware/web3",
     "description": "PHP library for Web3",
     "type": "library",
-    "license": "BSL-1.1",
+    "license": "CC-BY-4.0",
     "version": "1.0.0",
     "autoload": {
         "psr-4": {

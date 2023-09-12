@@ -19,7 +19,7 @@ pingleware-deploy-cli
     sudo snapcraft install pingleware-deploy-cli
 
 
-## Sample code,
+## Sample code
 
 ```
     require "vendor/autoload.php";
