@@ -5,9 +5,13 @@ namespace PINGLEWARE\Web3;
 
 class Web3 {
     var $_url = "";
+    var $deploy_cli = "pingleware-deploy-cli";
 
-    public function __construct($url) {
+    public function __construct($url,$deploy_cli="") {
         $this->_url = $url;
+        if ($deploy_cli !== "") {
+            $this->deploy_cli = $deploy_cli;
+        }
     }
 
     /**
@@ -143,7 +147,7 @@ class Web3 {
      * string $constructor_arguments 0xbd7a53B05592497624d71f0fF9e12AdCc20c69d6,FL,REG 3(a)(11),REG3A11,4000000,5,0xFDf076CF850f67103A13a347f968305cE85831E2,0xB5466EC8A290913dB16C639e4cEF98C1411e0b9F,0x6336972E8F3AaCcF4b1Fbc0913708255Fc2EeB6F,0x84ce497f283E659c0a2db85C8Fd008F319CEfF73
      */
     public function deployContract($wallet,$abi_filename,$bytecode_filename,$contructor_arguments) {
-        exec("pingleware-deploy-cli --url=$this->_url --account=$wallet --abi=$abi_filename --bytecode=$bytecode_filename --arguments='$contructor_arguments'", $contractAddress);
+        exec("$this->deploy_cli --url=$this->_url --account=$wallet --abi=$abi_filename --bytecode=$bytecode_filename --arguments='$contructor_arguments'", $contractAddress);
         return $contractAddress;
     }
 
@@ -180,7 +184,7 @@ class Web3 {
         return $response;
     }
 
-    private function detectArchitecture() {
+    public static function detectArchitecture() {
         $uname = php_uname('m'); // Get machine hardware name from uname
     
         // Check if the machine hardware name contains 'arm' (case-insensitive)
