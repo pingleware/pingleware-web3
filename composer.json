@@ -15,5 +15,11 @@
             "email": "maintainers@pingleware.work"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../pingleware-web3"
+        }
+    ]
 }

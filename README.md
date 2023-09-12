@@ -18,7 +18,6 @@ pingleware-deploy-cli
 
     sudo snapcraft install pingleware-deploy-cli
 
-
 ## Sample code
 
 ```
@@ -43,12 +42,15 @@ pingleware-deploy-cli
 
 ```
 
-## Package List Error
+command to execute,
 
 ```
-Reading composer.json of pingleware/web3 (main)
-Importing branch main (dev-main)
-Skipped branch main, Invalid package information: 
-require.curl is invalid, it should have a vendor name, a forward slash, and a package name. The vendor and package name can be words separated by -, . or _. The complete name should match "^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z0-9](([_.]?|-{0,2})[a-z0-9]+)*$".
-require.pingleware-deploy-cli is invalid, it should have a vendor name, a forward slash, and a package name. The vendor and package name can be words separated by -, . or _. The complete name should match "^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z0-9](([_.]?|-{0,2})[a-z0-9]+)*$".
+php -f index.php
+```
+
+results,
+
+```
+Balance: 997.34654526537 ETH
+Contract Address: 0x4106fC344F17e207bAf7aF3B8CDB6325724F6fb8
 ```
