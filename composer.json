@@ -15,9 +15,5 @@
             "email": "maintainers@pingleware.work"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {
-        "php": ">=8.2",
-        "curl": ">=7.82"
-    }
+    "minimum-stability": "stable"
 }
