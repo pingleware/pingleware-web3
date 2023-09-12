@@ -9,9 +9,9 @@ try {
     $arch = Web3::detectArchitecture();
     $os = strtolower(PHP_OS);
     if ($arch == "ARM") {
-        $web3 = new Web3("http://192.168.0.103:8545",dirname(__FILE__)."/pingleware-deploy-cli_$os-arm64");
+        $web3 = new Web3("http://192.168.0.103:8545",dirname(__FILE__)."../bin/pingleware-deploy-cli_$os-arm64");
     } else if ($arch == "x64") {
-        $web3 = new Web3("http://192.168.0.103:8545",dirname(__FILE__)."/pingleware-deploy-cli_$os-x64");
+        $web3 = new Web3("http://192.168.0.103:8545",dirname(__FILE__)."../bin/pingleware-deploy-cli_$os-x64");
     } else {
         echo "architecture is UNKNOWN?\n";
         exit;

@@ -18,6 +18,10 @@ pingleware-deploy-cli
 
     sudo snapcraft install pingleware-deploy-cli
 
+if using the executables in the bin path, ensure the permissions are set properly,
+
+    sudo chmod +x vendor/pingleware/web3/bin/pingleware-deploy-cli*
+
 ## Sample code
 
 ```
