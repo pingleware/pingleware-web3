@@ -42,3 +42,13 @@ pingleware-deploy-cli
 
 
 ```
+
+## Package List Error
+
+```
+Reading composer.json of pingleware/web3 (main)
+Importing branch main (dev-main)
+Skipped branch main, Invalid package information: 
+require.curl is invalid, it should have a vendor name, a forward slash, and a package name. The vendor and package name can be words separated by -, . or _. The complete name should match "^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z0-9](([_.]?|-{0,2})[a-z0-9]+)*$".
+require.pingleware-deploy-cli is invalid, it should have a vendor name, a forward slash, and a package name. The vendor and package name can be words separated by -, . or _. The complete name should match "^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z0-9](([_.]?|-{0,2})[a-z0-9]+)*$".
+```
